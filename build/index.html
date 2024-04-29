@@ -1,138 +1,546 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="../build/css/style.css">
-</head>
-<body class="antialiased text-white bg-gray-900 cursor-auto selection:bg-white/20">
-    <main class="grid gap-4 p-4 mx-auto sm:p-6 sm:gap-6 lg:gap-8 lg:p-8 max-w-7xl md:grid-cols-8 lg:grid-cols-12">
-            <section class="lg:col-span-8 md:col-span-5">
-                <div class="bg-gradient-to-b from-gray-700 via-gray-700 to-gray-700 sm:to-cyan-400 md:to-gray-700 rounded-3xl sm:rounded-[2rem] group transition duration-500 md:hover:to-cyan-400 p-px">
-                    <div class="relative p-4 overflow-hidden bg-gray-800 rounded-3xl sm:rounded-[2rem] sm:p-6 lg:p-8 overflow-fix">
-                        <div class="relative z-10">
-                            <h1 class="text-2xl mt-4 sm:text-3xl lg:text-4xl xl:text-[2.5rem] lg:leading-tight font-medium max-w-xl xl:max-w-2xl">
-                                Hi 👋 I'm Halleluya
-                                <span class="transition duration-300 text-cyan-300 md:text-white md:group-hover:text-cyan-300">A Web Developer</span>
-                                based in Ethiopia with a passion for Ai
-                            </h1>
-                            <p class="mt-6 text-base font-normal sm:text-lg text-white/80 md:max-w-xl xl:max-w-2xl">
-                                With over 7 years of experience, Gideon has honed his skills in HTML, CSS, JavaScript and PHP, as well as frameworks like React, Next.js and Tailwind CSS, allowing him to bring visually appealing and functional websites to life.
-                            </p>
-                            <div class="mt-8 space-y-2 sm:mt-12 lg:mt-16 sm:space-y-0 sm:space-x-2 sm:flex sm:items-center">
-                                <a aria-label="Email" href="mailto:halleluya.mulugeta@gmail.com" target="_blank" rel="noopener" class="cursor-pointer block w-full h-12 overflow-hidden rounded-full sm:w-12 transition bg-white group-hover:bg-white" previewlistener="true">
-                                    <div class="inline-flex items-center justify-center w-full h-full text-sm font-medium transition duration-300 hover:bg-white">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="hidden w-4 h-4 sm:block"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
-                                    <span class="inline-block sm:hidden text-black">Email me</span>
-                                    </div>
-                                </a>
-                                <a aria-label="LinkedIn" href="https://www.linkedin.com/in/halleluya-mulugeta/" target="_blank" rel="noopener" class="cursor-pointer block w-full h-12 overflow-hidden rounded-full sm:w-12 transition bg-white/10 group-hover:bg-white/[.15]" previewlistener="true">
-                                    <div class="inline-flex items-center justify-center w-full h-full text-sm font-medium transition duration-300 hover:bg-white/20">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="hidden w-4 h-4 sm:block"><path fill="#f1f1ff" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
-                                    <span class="inline-block sm:hidden">Let's Connect on LinkedIn</span>
-                                    </div>
-                                </a>
-                                <a aria-label="GitHub" href="https://github.com/halleygz/" target="_blank" rel="noopener" class="cursor-pointer block w-full h-12 overflow-hidden rounded-full sm:w-12 transition bg-white/10 group-hover:bg-white/[.15]" previewlistener="true">
-                                    <div class="inline-flex items-center justify-center w-full h-full text-sm font-medium transition duration-300 hover:bg-white/20">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="hidden w-4 h-4 sm:block"><path fill="#ffffff" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-                                    <span class="inline-block sm:hidden">See more on GitHub</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="absolute inset-x-0 opacity-0 sm:opacity-80 md:opacity-0 bottom-0 h-[50%] blur scale-105 md:group-hover:opacity-80 transition duration-300 bg-radial-glow from-cyan-400/50 to-cyan-400"></div>
-                        </div>
-                    </div>
+    <link rel="stylesheet" href="../build/css/style.css" />
+  </head>
+  <body
+    class="antialiased text-white bg-gray-900 cursor-auto selection:bg-white/20"
+  >
+    <main
+      class="grid gap-4 p-4 mx-auto sm:p-6 sm:gap-6 lg:gap-8 lg:p-8 max-w-7xl md:grid-cols-8 lg:grid-cols-12"
+    >
+      <section class="lg:col-span-8 md:col-span-5">
+        <div
+          class="bg-gradient-to-b from-gray-700 via-gray-700 to-gray-700 sm:to-cyan-400 md:to-gray-700 rounded-3xl sm:rounded-[2rem] group transition duration-500 md:hover:to-cyan-400 p-px"
+        >
+          <div
+            class="relative p-4 overflow-hidden bg-gray-800 rounded-3xl sm:rounded-[2rem] sm:p-6 lg:p-8 overflow-fix"
+          >
+            <div class="relative z-10">
+              <h1
+                class="text-2xl mt-4 sm:text-3xl lg:text-4xl xl:text-[2.5rem] lg:leading-tight font-medium max-w-xl xl:max-w-2xl"
+              >
+                Hi 👋 I'm Halleluya
+                <span
+                  class="transition duration-300 text-cyan-300 md:text-white md:group-hover:text-cyan-300"
+                  >A Web Developer</span
+                >
+                based in Ethiopia with a passion for Ai
+              </h1>
+              <p
+                class="mt-6 text-base font-normal sm:text-lg text-white/80 md:max-w-xl xl:max-w-2xl"
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Delectus maiores laudantium, voluptatibus repellendus laborum
+                nisi neque nulla esse facilis maxime tempora nobis, accusamus
+                fuga odio, ut illum quibusdam. Veniam, unde!
+              </p>
+              <div
+                class="mt-8 space-y-2 sm:mt-12 lg:mt-16 sm:space-y-0 sm:space-x-2 sm:flex sm:items-center"
+              >
+                <a
+                  aria-label="Email"
+                  href="mailto:halleluya.mulugeta@gmail.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="cursor-pointer block w-full h-12 overflow-hidden rounded-full sm:w-12 transition bg-white group-hover:bg-white"
+                  previewlistener="true"
+                >
+                  <div
+                    class="inline-flex items-center justify-center w-full h-full text-sm font-medium transition duration-300 hover:bg-white"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                      class="hidden w-4 h-4 sm:block"
+                    >
+                      <path
+                        d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                      />
+                    </svg>
+                    <span class="inline-block sm:hidden text-black"
+                      >Email me</span
+                    >
+                  </div>
+                </a>
+                <a
+                  aria-label="LinkedIn"
+                  href="https://www.linkedin.com/in/halleluya-mulugeta/"
+                  target="_blank"
+                  rel="noopener"
+                  class="cursor-pointer block w-full h-12 overflow-hidden rounded-full sm:w-12 transition bg-white/10 group-hover:bg-white/[.15]"
+                  previewlistener="true"
+                >
+                  <div
+                    class="inline-flex items-center justify-center w-full h-full text-sm font-medium transition duration-300 hover:bg-white/20"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                      class="hidden w-4 h-4 sm:block"
+                    >
+                      <path
+                        fill="#f1f1ff"
+                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                      />
+                    </svg>
+                    <span class="inline-block sm:hidden"
+                      >Let's Connect on LinkedIn</span
+                    >
+                  </div>
+                </a>
+                <a
+                  aria-label="GitHub"
+                  href="https://github.com/halleygz/"
+                  target="_blank"
+                  rel="noopener"
+                  class="cursor-pointer block w-full h-12 overflow-hidden rounded-full sm:w-12 transition bg-white/10 group-hover:bg-white/[.15]"
+                  previewlistener="true"
+                >
+                  <div
+                    class="inline-flex items-center justify-center w-full h-full text-sm font-medium transition duration-300 hover:bg-white/20"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 496 512"
+                      class="hidden w-4 h-4 sm:block"
+                    >
+                      <path
+                        fill="#ffffff"
+                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                      />
+                    </svg>
+                    <span class="inline-block sm:hidden"
+                      >See more on GitHub</span
+                    >
+                  </div>
+                </a>
+              </div>
+              <div
+                class="absolute inset-x-0 opacity-0 sm:opacity-80 md:opacity-0 bottom-0 h-[50%] blur scale-105 md:group-hover:opacity-80 transition duration-300 bg-radial-glow from-cyan-400/50 to-cyan-400"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="hidden md:block md:col-span-3 lg:col-span-4">
+        <div
+          class="h-full p-px bg-gradient-to-b rounded-3xl sm:rounded-[2rem] from-gray-300 via-gray-300 group hover:to-cyan-200 transition duration-300"
+        >
+          <div
+            class="relative h-full overflow-fix overflow-hidden bg-gradient-to-b from-[#B5BCC8] to-[#F9FAFB] rounded-3xl sm:rounded-[2rem]"
+          >
+            <img
+              src="./img/pic.png"
+              alt="Halle's pic"
+              width="1210"
+              height="1613"
+              class="absolute inset-0 z-10 object-cover h-full sm:rounded-[2rem]"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- projects -->
+      <h1
+        class="p-6 lg:col-span-12 md:col-span-8 text-4xl text-center font-medium"
+      >
+        Projects
+      </h1>
+      <section class="md:col-span-4 lg:col-span-6">
+        <a
+          href="#"
+          class="block cursor-pointer relative group duration-500 rounded-3xl sm:rounded-[2rem] md:to-gray-700 md:via-gray-700 bg-gradient-to-b md:hover:from-gray-700 md:hover:from-15% from-gray-700 p-px pb-0 via-cyan-400 to-cyan-400 md:hover:via-cyan-400 md:hover:to-cyan-400"
+        >
+          <div
+            class="relative bg-gray-800 rounded-3xl sm:rounded-[2rem] p-4 sm:p-6 lg:p-8 aspect-square sm:aspect-[5/4] md:aspect-square overflow-hidden"
+          >
+            <div class="absolute top-0 right-0 z-10 p-4 sm:p-6">
+              <div
+                class="flex items-center justify-center w-10 h-10 duration-300 rounded-full opacity-100 md:opacity-0 lg:w-12 lg:h-12 bg-white/5 hover:bg-white/10 group-hover:opacity-100"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M9.25 4.75h-2.5a2 2 0 00-2 2v10.5a2 2 0 002 2h10.5a2 2 0 002-2v-2.5M19.25 9.25v-4.5h-4.5M19 5l-7.25 7.25"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <h3
+              class="text-xl mt-1 sm:text-2xl md:text-xl font-medium md:text-white transition duration-300 text-cyan-300 md:group-hover:text-cyan-300"
+            >
+              Moto-Parcel
+            </h3>
+            <p class="text-base font-normal sm:mt-1 sm:text-lg text-white/80">
+              "Design"
+            </p>
+            <div class="relative mt-6 sm:mt-8">
+              <img
+                src="./img/project1.png"
+                alt="moto parcel"
+                width="1210"
+                height="1412"
+                class="object-cover transition duration-300 opacity-100 rounded-t-xl md:opacity-0 md:group-hover:opacity-100"
+                style="color: transparent"
+              />
+              <img
+                src="./img/project1.png"
+                alt="moto parcel"
+                width="1210"
+                height="1412"
+                class="absolute inset-0 object-cover rounded-t-xl mix-blend-luminosity"
+                style="color: transparent"
+              />
+            </div>
+          </div>
+        </a>
+      </section>
+      <section
+        class="gap-4 md:gap-4 md:grid-cols-2 md:grid lg:gap-6 md:col-span-4 lg:col-span-6"
+      >
+        <a
+          href="#"
+          class="m-4 sm:m-0 sm:block cursor-pointer sm:relative sm:group duration-500 rounded-3xl sm:rounded-[2rem] md:to-gray-700 md:via-gray-700 bg-gradient-to-b md:hover:from-gray-700 md:hover:from-15% from-gray-700 p-px pb-0 via-cyan-400 to-cyan-400 md:hover:via-cyan-400 md:hover:to-cyan-400"
+        >
+          <div
+            class="relative bg-gray-800 rounded-3xl sm:rounded-[2rem] p-4 sm:p-6 lg:p-8 aspect-square sm:aspect-[5/4] md:aspect-square overflow-hidden"
+          >
+            <div class="absolute top-0 right-0 z-10 p-4 sm:p-6">
+              <div
+                class="flex items-center justify-center w-10 h-10 duration-300 rounded-full opacity-100 md:opacity-0 lg:w-12 lg:h-12 bg-white/5 hover:bg-white/10 group-hover:opacity-100"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M9.25 4.75h-2.5a2 2 0 00-2 2v10.5a2 2 0 002 2h10.5a2 2 0 002-2v-2.5M19.25 9.25v-4.5h-4.5M19 5l-7.25 7.25"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <h3
+              class="text-xl mt-1 sm:text-2xl md:text-xl font-medium md:text-white transition duration-300 text-cyan-300 md:group-hover:text-cyan-300"
+            >
+              Moto-Parcel
+            </h3>
+            <p class="text-base font-normal sm:mt-1 sm:text-lg text-white/80">
+              "Design"
+            </p>
+            <div class="relative mt-6 sm:mt-8">
+              <img
+                src="./img/project1.png"
+                alt="moto parcel"
+                width="1210"
+                height="1412"
+                class="object-cover transition duration-300 opacity-100 rounded-t-xl md:opacity-0 md:group-hover:opacity-100"
+                style="color: transparent"
+              />
+              <img
+                src="./img/project1.png"
+                alt="moto parcel"
+                width="1210"
+                height="1412"
+                class="absolute inset-0 object-cover rounded-t-xl mix-blend-luminosity"
+                style="color: transparent"
+              />
+            </div>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="m-4 sm:m-0 sm:block cursor-pointer sm:relative sm:group duration-500 rounded-3xl sm:rounded-[2rem] md:to-gray-700 md:via-gray-700 bg-gradient-to-b md:hover:from-gray-700 md:hover:from-15% from-gray-700 p-px pb-0 via-cyan-400 to-cyan-400 md:hover:via-cyan-400 md:hover:to-cyan-400"
+        >
+          <div
+            class="relative bg-gray-800 rounded-3xl sm:rounded-[2rem] p-4 sm:p-6 lg:p-8 aspect-square sm:aspect-[5/4] md:aspect-square overflow-hidden"
+          >
+            <div class="absolute top-0 right-0 z-10 p-4 sm:p-6">
+              <div
+                class="flex items-center justify-center w-10 h-10 duration-300 rounded-full opacity-100 md:opacity-0 lg:w-12 lg:h-12 bg-white/5 hover:bg-white/10 group-hover:opacity-100"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M9.25 4.75h-2.5a2 2 0 00-2 2v10.5a2 2 0 002 2h10.5a2 2 0 002-2v-2.5M19.25 9.25v-4.5h-4.5M19 5l-7.25 7.25"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <h3
+              class="text-xl mt-1 sm:text-2xl md:text-xl font-medium md:text-white transition duration-300 text-cyan-300 md:group-hover:text-cyan-300"
+            >
+              Moto-Parcel
+            </h3>
+            <p class="text-base font-normal sm:mt-1 sm:text-lg text-white/80">
+              "Design"
+            </p>
+            <div class="relative mt-6 sm:mt-8">
+              <img
+                src="./img/project1.png"
+                alt="moto parcel"
+                width="1210"
+                height="1412"
+                class="object-cover transition duration-300 opacity-100 rounded-t-xl md:opacity-0 md:group-hover:opacity-100"
+                style="color: transparent"
+              />
+              <img
+                src="./img/project1.png"
+                alt="moto parcel"
+                width="1210"
+                height="1412"
+                class="absolute inset-0 object-cover rounded-t-xl mix-blend-luminosity"
+                style="color: transparent"
+              />
+            </div>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="m-4 sm:m-0 sm:block cursor-pointer sm:relative sm:group duration-500 rounded-3xl sm:rounded-[2rem] md:to-gray-700 md:via-gray-700 bg-gradient-to-b md:hover:from-gray-700 md:hover:from-15% from-gray-700 p-px pb-0 via-cyan-400 to-cyan-400 md:hover:via-cyan-400 md:hover:to-cyan-400"
+        >
+          <div
+            class="relative bg-gray-800 rounded-3xl sm:rounded-[2rem] p-4 sm:p-6 lg:p-8 aspect-square sm:aspect-[5/4] md:aspect-square overflow-hidden"
+          >
+            <div class="absolute top-0 right-0 z-10 p-4 sm:p-6">
+              <div
+                class="flex items-center justify-center w-10 h-10 duration-300 rounded-full opacity-100 md:opacity-0 lg:w-12 lg:h-12 bg-white/5 hover:bg-white/10 group-hover:opacity-100"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M9.25 4.75h-2.5a2 2 0 00-2 2v10.5a2 2 0 002 2h10.5a2 2 0 002-2v-2.5M19.25 9.25v-4.5h-4.5M19 5l-7.25 7.25"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <h3
+              class="text-xl mt-1 sm:text-2xl md:text-xl font-medium md:text-white transition duration-300 text-cyan-300 md:group-hover:text-cyan-300"
+            >
+              Moto-Parcel
+            </h3>
+            <p class="text-base font-normal sm:mt-1 sm:text-lg text-white/80">
+              "Design"
+            </p>
+            <div class="relative mt-6 sm:mt-8">
+              <img
+                src="./img/project1.png"
+                alt="moto parcel"
+                width="1210"
+                height="1412"
+                class="object-cover transition duration-300 opacity-100 rounded-t-xl md:opacity-0 md:group-hover:opacity-100"
+                style="color: transparent"
+              />
+              <img
+                src="./img/project1.png"
+                alt="moto parcel"
+                width="1210"
+                height="1412"
+                class="absolute inset-0 object-cover rounded-t-xl mix-blend-luminosity"
+                style="color: transparent"
+              />
+            </div>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="sm:m-0 m-4 sm:block cursor-pointer sm:relative sm:group duration-500 rounded-3xl sm:rounded-[2rem] md:to-gray-700 md:via-gray-700 bg-gradient-to-b md:hover:from-gray-700 md:hover:from-15% from-gray-700 p-px pb-0 via-cyan-400 to-cyan-400 md:hover:via-cyan-400 md:hover:to-cyan-400"
+        >
+          <div
+            class="relative bg-gray-800 rounded-3xl sm:rounded-[2rem] p-4 sm:p-6 lg:p-8 aspect-square sm:aspect-[5/4] md:aspect-square overflow-hidden"
+          >
+            <div class="absolute top-0 right-0 z-10 p-4 sm:p-6">
+              <div
+                class="flex items-center justify-center w-10 h-10 duration-300 rounded-full opacity-100 md:opacity-0 lg:w-12 lg:h-12 bg-white/5 hover:bg-white/10 group-hover:opacity-100"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M9.25 4.75h-2.5a2 2 0 00-2 2v10.5a2 2 0 002 2h10.5a2 2 0 002-2v-2.5M19.25 9.25v-4.5h-4.5M19 5l-7.25 7.25"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <h3
+              class="text-xl mt-1 sm:text-2xl md:text-xl font-medium md:text-white transition duration-300 text-cyan-300 md:group-hover:text-cyan-300"
+            >
+              Moto-Parcel
+            </h3>
+            <p class="text-base font-normal sm:mt-1 sm:text-lg text-white/80">
+              "Design"
+            </p>
+            <div class="relative mt-6 sm:mt-8">
+              <img
+                src="./img/project1.png"
+                alt="moto parcel"
+                width="1210"
+                height="1412"
+                class="object-cover transition duration-300 opacity-100 rounded-t-xl md:opacity-0 md:group-hover:opacity-100"
+                style="color: transparent"
+              />
+              <img
+                src="./img/project1.png"
+                alt="moto parcel"
+                width="1210"
+                height="1412"
+                class="absolute inset-0 object-cover rounded-t-xl mix-blend-luminosity"
+                style="color: transparent"
+              />
+            </div>
+          </div>
+        </a>
+      </section>
+      <!-- experience -->
+      
+      <section class="lg:col-span-12 md:col-span-8">
+            <div class="top-0 py-3">
+              <h2 class="group-date">Experience</h2>
+            </div>
+            <div class="timeline">
+              <div class="relative">
+                <div class="dot"></div>
+                <div class="pl-10">
+                  <span class="timeline-date">13 Nov-13Dec 2021</span>
+                  <h3 class="timeline-title">Work 1</h3>
+                  <p class="text-gray-">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi rerum rem debitis hic repellat atque, nesciunt explicabo natus cumque adipisci, ullam aut eius optio ipsa, dignissimos sapiente amet odit nostrum?
+                  </p>
                 </div>
-            </section> 
-            <section class="hidden md:block md-col-span-3 lg:col-span-4">
-                <div class="h-full p-px bg-gradient-to-b rounded-3xl sm:rounded-[2rem] from-gray-300 via-gray-300 group hover:to-cyan-200 transition duration-300">
-                    <div class="relative h-full overflow-fix overflow-hidden bg-gradient-to-b from-[#B5BCC8] to-[#F9FAFB] rounded-3xl sm:rounded-[2rem]">
-                        <img src="./img/pic.png" alt="Halle's pic" width='1210' height='1613' class="absolute inset-0 z-10 object-cover h-full sm:rounded-[2rem]">
-                    </div>
+              </div>
+              <div class="relative">
+                <div class="dot"></div>
+                <div class="pl-10">
+                  <span class="timeline-date">13 Nov-13Dec 2021</span>
+                  <h3 class="timeline-title">Work 1</h3>
+                  <p class="text-gray-">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi rerum rem debitis hic repellat atque, nesciunt explicabo natus cumque adipisci, ullam aut eius optio ipsa, dignissimos sapiente amet odit nostrum?
+                  </p>
                 </div>
-            </section>
-            <!-- projects -->
-            <h1 class="p-6 lg:col-span-12 md:col-span-8 text-4xl text-center font-medium">Projects</h1>
-            <section class="md:col-span-4 lg:col-span-6">
-                <a href="#" class="block cursor-pointer relative group duration-500 rounded-3xl sm:rounded-[2rem] md:to-gray-700 md:via-gray-700 bg-gradient-to-b md:hover:from-gray-700 md:hover:from-15% from-gray-700 p-px pb-0 via-cyan-400 to-cyan-400 md:hover:via-cyan-400 md:hover:to-cyan-400">
-                    <div class="relative bg-gray-800 rounded-3xl sm:rounded-[2rem] p-4 sm:p-6 lg:p-8 aspect-square sm:aspect-[5/4] md:aspect-square overflow-hidden">
-                        <div class="absolute top-0 right-0 z-10 p-4 sm:p-6">
-                            <div class="flex items-center justify-center w-10 h-10 duration-300 rounded-full opacity-100 md:opacity-0 lg:w-12 lg:h-12 bg-white/5 hover:bg-white/10 group-hover:opacity-100">
-                                <svg width="24" height="24" fill="none" viewBox="0 0 24 24" class="w-6 h-6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.25 4.75h-2.5a2 2 0 00-2 2v10.5a2 2 0 002 2h10.5a2 2 0 002-2v-2.5M19.25 9.25v-4.5h-4.5M19 5l-7.25 7.25"></path></svg>
-                            </div>
-                        </div>
-                        <h3 class="text-xl mt-1 sm:text-2xl md:text-xl font-medium md:text-white transition duration-300 text-cyan-300 md:group-hover:text-cyan-300">Moto-Parcel</h3>
-                        <p class="text-base font-normal sm:mt-1 sm:text-lg text-white/80">"Design"</p>
-                        <div class="relative mt-6 sm:mt-8">
-                            <img src="./img/project1.png" alt="moto parcel" width="1210" height="1412" class="object-cover transition duration-300 opacity-100 rounded-t-xl md:opacity-0 md:group-hover:opacity-100" style="color: transparent;">
-                            <img src="./img/project1.png" alt="moto parcel" width="1210" height="1412" class="absolute inset-0 object-cover rounded-t-xl mix-blend-luminosity" style="color: transparent;">
-                        </div>
-                    </div>
-                </a>
-            </section>
-            <section class="hidden md:gap-4 md:grid-cols-2 md:grid lg:gap-6 md:col-span-4 lg:col-span-6">
-                <a href="#" class="block cursor-pointer relative group duration-500 rounded-3xl sm:rounded-[2rem] md:to-gray-700 md:via-gray-700 bg-gradient-to-b md:hover:from-gray-700 md:hover:from-15% from-gray-700 p-px pb-0 via-cyan-400 to-cyan-400 md:hover:via-cyan-400 md:hover:to-cyan-400">
-                    <div class="relative bg-gray-800 rounded-3xl sm:rounded-[2rem] p-4 sm:p-6 lg:p-8 aspect-square sm:aspect-[5/4] md:aspect-square overflow-hidden">
-                        <div class="absolute top-0 right-0 z-10 p-4 sm:p-6">
-                            <div class="flex items-center justify-center w-10 h-10 duration-300 rounded-full opacity-100 md:opacity-0 lg:w-12 lg:h-12 bg-white/5 hover:bg-white/10 group-hover:opacity-100">
-                                <svg width="24" height="24" fill="none" viewBox="0 0 24 24" class="w-6 h-6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.25 4.75h-2.5a2 2 0 00-2 2v10.5a2 2 0 002 2h10.5a2 2 0 002-2v-2.5M19.25 9.25v-4.5h-4.5M19 5l-7.25 7.25"></path></svg>
-                            </div>
-                        </div>
-                        <h3 class="text-xl mt-1 sm:text-2xl md:text-xl font-medium md:text-white transition duration-300 text-cyan-300 md:group-hover:text-cyan-300">Moto-Parcel</h3>
-                        <p class="text-base font-normal sm:mt-1 sm:text-lg text-white/80">"Design"</p>
-                        <div class="relative mt-6 sm:mt-8">
-                            <img src="./img/project1.png" alt="moto parcel" width="1210" height="1412" class="object-cover transition duration-300 opacity-100 rounded-t-xl md:opacity-0 md:group-hover:opacity-100" style="color: transparent;">
-                            <img src="./img/project1.png" alt="moto parcel" width="1210" height="1412" class="absolute inset-0 object-cover rounded-t-xl mix-blend-luminosity" style="color: transparent;">
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="block cursor-pointer relative group duration-500 rounded-3xl sm:rounded-[2rem] md:to-gray-700 md:via-gray-700 bg-gradient-to-b md:hover:from-gray-700 md:hover:from-15% from-gray-700 p-px pb-0 via-cyan-400 to-cyan-400 md:hover:via-cyan-400 md:hover:to-cyan-400">
-                    <div class="relative bg-gray-800 rounded-3xl sm:rounded-[2rem] p-4 sm:p-6 lg:p-8 aspect-square sm:aspect-[5/4] md:aspect-square overflow-hidden">
-                        <div class="absolute top-0 right-0 z-10 p-4 sm:p-6">
-                            <div class="flex items-center justify-center w-10 h-10 duration-300 rounded-full opacity-100 md:opacity-0 lg:w-12 lg:h-12 bg-white/5 hover:bg-white/10 group-hover:opacity-100">
-                                <svg width="24" height="24" fill="none" viewBox="0 0 24 24" class="w-6 h-6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.25 4.75h-2.5a2 2 0 00-2 2v10.5a2 2 0 002 2h10.5a2 2 0 002-2v-2.5M19.25 9.25v-4.5h-4.5M19 5l-7.25 7.25"></path></svg>
-                            </div>
-                        </div>
-                        <h3 class="text-xl mt-1 sm:text-2xl md:text-xl font-medium md:text-white transition duration-300 text-cyan-300 md:group-hover:text-cyan-300">Moto-Parcel</h3>
-                        <p class="text-base font-normal sm:mt-1 sm:text-lg text-white/80">"Design"</p>
-                        <div class="relative mt-6 sm:mt-8">
-                            <img src="./img/project1.png" alt="moto parcel" width="1210" height="1412" class="object-cover transition duration-300 opacity-100 rounded-t-xl md:opacity-0 md:group-hover:opacity-100" style="color: transparent;">
-                            <img src="./img/project1.png" alt="moto parcel" width="1210" height="1412" class="absolute inset-0 object-cover rounded-t-xl mix-blend-luminosity" style="color: transparent;">
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="block cursor-pointer relative group duration-500 rounded-3xl sm:rounded-[2rem] md:to-gray-700 md:via-gray-700 bg-gradient-to-b md:hover:from-gray-700 md:hover:from-15% from-gray-700 p-px pb-0 via-cyan-400 to-cyan-400 md:hover:via-cyan-400 md:hover:to-cyan-400">
-                    <div class="relative bg-gray-800 rounded-3xl sm:rounded-[2rem] p-4 sm:p-6 lg:p-8 aspect-square sm:aspect-[5/4] md:aspect-square overflow-hidden">
-                        <div class="absolute top-0 right-0 z-10 p-4 sm:p-6">
-                            <div class="flex items-center justify-center w-10 h-10 duration-300 rounded-full opacity-100 md:opacity-0 lg:w-12 lg:h-12 bg-white/5 hover:bg-white/10 group-hover:opacity-100">
-                                <svg width="24" height="24" fill="none" viewBox="0 0 24 24" class="w-6 h-6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.25 4.75h-2.5a2 2 0 00-2 2v10.5a2 2 0 002 2h10.5a2 2 0 002-2v-2.5M19.25 9.25v-4.5h-4.5M19 5l-7.25 7.25"></path></svg>
-                            </div>
-                        </div>
-                        <h3 class="text-xl mt-1 sm:text-2xl md:text-xl font-medium md:text-white transition duration-300 text-cyan-300 md:group-hover:text-cyan-300">Moto-Parcel</h3>
-                        <p class="text-base font-normal sm:mt-1 sm:text-lg text-white/80">"Design"</p>
-                        <div class="relative mt-6 sm:mt-8">
-                            <img src="./img/project1.png" alt="moto parcel" width="1210" height="1412" class="object-cover transition duration-300 opacity-100 rounded-t-xl md:opacity-0 md:group-hover:opacity-100" style="color: transparent;">
-                            <img src="./img/project1.png" alt="moto parcel" width="1210" height="1412" class="absolute inset-0 object-cover rounded-t-xl mix-blend-luminosity" style="color: transparent;">
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="block cursor-pointer relative group duration-500 rounded-3xl sm:rounded-[2rem] md:to-gray-700 md:via-gray-700 bg-gradient-to-b md:hover:from-gray-700 md:hover:from-15% from-gray-700 p-px pb-0 via-cyan-400 to-cyan-400 md:hover:via-cyan-400 md:hover:to-cyan-400">
-                    <div class="relative bg-gray-800 rounded-3xl sm:rounded-[2rem] p-4 sm:p-6 lg:p-8 aspect-square sm:aspect-[5/4] md:aspect-square overflow-hidden">
-                        <div class="absolute top-0 right-0 z-10 p-4 sm:p-6">
-                            <div class="flex items-center justify-center w-10 h-10 duration-300 rounded-full opacity-100 md:opacity-0 lg:w-12 lg:h-12 bg-white/5 hover:bg-white/10 group-hover:opacity-100">
-                                <svg width="24" height="24" fill="none" viewBox="0 0 24 24" class="w-6 h-6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.25 4.75h-2.5a2 2 0 00-2 2v10.5a2 2 0 002 2h10.5a2 2 0 002-2v-2.5M19.25 9.25v-4.5h-4.5M19 5l-7.25 7.25"></path></svg>
-                            </div>
-                        </div>
-                        <h3 class="text-xl mt-1 sm:text-2xl md:text-xl font-medium md:text-white transition duration-300 text-cyan-300 md:group-hover:text-cyan-300">Moto-Parcel</h3>
-                        <p class="text-base font-normal sm:mt-1 sm:text-lg text-white/80">"Design"</p>
-                        <div class="relative mt-6 sm:mt-8">
-                            <img src="./img/project1.png" alt="moto parcel" width="1210" height="1412" class="object-cover transition duration-300 opacity-100 rounded-t-xl md:opacity-0 md:group-hover:opacity-100" style="color: transparent;">
-                            <img src="./img/project1.png" alt="moto parcel" width="1210" height="1412" class="absolute inset-0 object-cover rounded-t-xl mix-blend-luminosity" style="color: transparent;">
-                        </div>
-                    </div>
-                </a>
-            </section>
-    </main> 
-</body>
+              </div>
+              <div class="relative">
+                <div class="dot">
+                  <div class="dot absolute -top-1 -left-1 animate-ping"></div>
+                </div>
+                <div class="pl-10">
+                  <span class="timeline-date">13 Nov-13Dec 2021</span>
+                  <h3 class="timeline-title">Work 1</h3>
+                  <p class="text-gray-">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi rerum rem debitis hic repellat atque, nesciunt explicabo natus cumque adipisci, ullam aut eius optio ipsa, dignissimos sapiente amet odit nostrum?
+                  </p>
+                </div>
+              </div>
+            </div>
+      </section>
+      <!-- Contact me -->
+      <h1
+        class="p-6 lg:col-span-12 md:col-span-8 text-4xl text-center font-medium"
+      >
+        Let's talk
+      </h1>
+      <section
+        class="lg:col-span-12 md:col-span-8 bg-gradient-to-b from-gray-700 via-gray-700 to-gray-700 sm:to-cyan-400 md:to-gray-700 rounded-3xl sm:rounded-[2rem] group transition duration-500 md:hover:to-cyan-400 p-px"
+      >
+        <section
+          class="relative p-4 overflow-hidden bg-gray-800 rounded-3xl sm:rounded-[2rem] sm:p-6 lg:p-8 overflow-fix"
+        >
+          <div class="container px-5 mx-auto">
+            <div class="lg:w-1/2 md:w-2/3 mx-auto">
+              <div class="flex flex-wrap -m-2">
+                <div class="p-2 w-1/2">
+                  <div class="relative">
+                    <label for="name" class="leading-7 text-sm text-gray-400"
+                      >Name</label
+                    >
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    />
+                  </div>
+                </div>
+                <div class="p-2 w-1/2">
+                  <div class="relative">
+                    <label for="email" class="leading-7 text-sm text-gray-400"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    />
+                  </div>
+                </div>
+                <div class="p-2 w-full">
+                  <div class="relative">
+                    <label for="message" class="leading-7 text-sm text-gray-400"
+                      >Message</label
+                    >
+                    <textarea
+                      id="message"
+                      name="message"
+                      class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="p-2 w-full">
+                  <button
+                    class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                  >
+                    Button
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
 </html>
