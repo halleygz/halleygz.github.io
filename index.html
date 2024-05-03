@@ -6,6 +6,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./build/css/style.css" />
     <link rel="shortcut icon" href="./img/ml2.png" type="image/x-icon" />
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
   </head>
   <body class="cursor-auto bg-gray-900 text-white antialiased selection:bg-white/20">
     <!-- Navbar -->
@@ -215,7 +216,7 @@
       <h1 id="contact" class="p-6 text-center text-4xl font-medium md:col-span-8 lg:col-span-12">Let's talk</h1>
       <section id="lets-talk" class="mx-auto flex flex-wrap justify-center md:col-span-8 lg:col-span-12">
         <div class="item-center md:w-2/3 lg:w-1/2">
-          <div class="-m-2 flex flex-wrap">
+          <form id="contact-form" class="-m-2 flex flex-wrap">
             <div class="w-1/2 p-2">
               <div class="relative">
                 <label for="name" class="text-sm leading-7 text-gray-400">Name</label>
@@ -235,9 +236,9 @@
               </div>
             </div>
             <div class="w-full p-2">
-              <button class="mx-auto flex rounded border-0 bg-indigo-500 px-8 py-2 text-lg text-white hover:bg-indigo-600 focus:outline-none">Submit</button>
+              <button class="mx-auto flex rounded border-0 bg-indigo-500 px-8 py-2 text-lg text-white hover:bg-indigo-600 focus:outline-none" type="submit">Submit</button>
             </div>
-          </div>
+          </form>
         </div>
       </section>
     </main>
