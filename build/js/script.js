@@ -37,5 +37,3 @@ document
       })
       .catch((err) => console.log(err));
   });
-
-// Remember to call sendMail() when the form is submitted
