@@ -1,103 +1,57 @@
 <!doctype html>
-<html lang="en">
+    <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="../build/css/style.css" />
+    <link rel="shortcut icon" href="./img/ml2.png" type="image/x-icon">
   </head>
   <body
     class="antialiased text-white bg-gray-900 cursor-auto selection:bg-white/20"
   >
     <!-- Navbar -->
-    <nav
-      class="supports-backdrop-blur:bg-white/95 sticky top-0 z-40 w-full flex-none bg-white backdrop-blur transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06] dark:bg-slate-900/75"
-    >
+    <section class="supports-backdrop-blur:bg-white/95 sticky top-0 z-40 w-full flex-none bg-white backdrop-blur transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06] dark:bg-slate-900/75">
       <div class="max-w-8xl mx-auto">
-        <div
-          class="border-b border-slate-900/10 px-4 py-4 lg:border-0 lg:px-8 dark:border-slate-300/10"
-        >
+        <div class="border-b border-slate-900/10 px-4 py-4 lg:border-0 lg:px-8 dark:border-slate-300/10">
           <div class="relative flex items-center justify-between">
-            <div class="relative" data-headlessui-state="">
-              
-              <button
-                class="dark:highlight-white/5 flex items-center space-x-2 rounded-full px-3 py-1 text-xs font-semibold leading-5 hover:bg-slate-400/20"
-                id=""
-                type="button"
-                aria-haspopup="menu"
-                aria-expanded="false"
-                data-headlessui-state=""
-              >
-                <img src="./img/mlm.png" class="h-10 w-10 rounded-full"alt="logo" />
-              
+            <div class="relative">
+              <button class="dark:highlight-white/5 flex items-center space-x-2 rounded-full px-3 py-1 text-xs font-semibold leading-5 hover:bg-slate-400/20" type="button">
+                <img src="./img/mlm.png" class="h-10 w-10 rounded-full" alt="logo" />
               </button>
             </div>
-            <div class="relative" data-headlessui-state="">
-              
-            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-end text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-              <span class="sr-only">Open main menu</span>
-              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-              </svg>
-          </button>
-              
-            </div>
-            <div class="relative ml-auto hidden items-center sm:flex">
-              <nav
-                class="text-sm font-semibold leading-6 text-slate-700 dark:text-slate-200"
-              >
-                <ul class="flex space-x-8">
-                  <li>
-                    <a
-                      class="hover:text-sky-500 dark:hover:text-sky-400"
-                      href="./index.html"
-                      previewlistener="true"
-                      >Home</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="/#about"
-                      class="hover:text-sky-500 dark:hover:text-sky-400"
-                      previewlistener="true"
-                      >About</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="hover:text-sky-500 dark:hover:text-sky-400"
-                      href="/#experience"
-                      previewlistener="true"
-                      >Experience</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="hover:text-sky-500 dark:hover:text-sky-400"
-                      href="/#Projects"
-                      previewlistener="true"
-                      >Projects</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="hover:text-sky-500 dark:hover:text-sky-400"
-                      href="/#contact"
-                      previewlistener="true"
-                      >Contact Me</a
-                    >
-                  </li>
-                </ul>
+            <div class="relative">
+              <button type="button" id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden">
+                <div class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']"></div>
+              </button>
+              <nav id="navLinks" class="hidden justify-center space-x-8 text-sm font-semibold leading-6 text-slate-700 md:block dark:text-slate-200">
+                <a class="hover:text-sky-500 dark:hover:text-sky-400" href="./index.html" previewlistener="true">Home</a>
+                <a href="./index.html#about" class="hover:text-sky-500 dark:hover:text-sky-400" previewlistener="true">About</a>
+                <a class="hover:text-sky-500 dark:hover:text-sky-400" href="./index.html#projects" previewlistener="true">Projects</a>
+                <a class="hover:text-sky-500 dark:hover:text-sky-400" href="./index.html#experience" previewlistener="true">Experience</a>
+                <a class="hover:text-sky-500 dark:hover:text-sky-400" href="./index.html#contact" previewlistener="true">Contact Me</a>
               </nav>
             </div>
+            <!-- <div class="relative ml-auto  items-center sm:flex" > -->
+            <!-- </div> -->
           </div>
+          <section id="mobile-menu" class="animate-open-menu absolute top-0 hidden w-full origin-top flex-col justify-center bg-black text-5xl">
+            <button class="self-end px-6 text-8xl transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded">&times;</button>
+            <nav class="flex min-h-screen flex-col items-center py-8 text-slate-700 md:block dark:text-slate-200">
+              <a class="w-full py-6 text-center hover:text-sky-500 dark:hover:text-sky-400" href="./index.html" previewlistener="true">Home</a>
+              <a href="./index.html#about" class="w-full py-6 text-center hover:text-sky-500 dark:hover:text-sky-400" previewlistener="true">About</a>
+              <a class="w-full py-6 text-center hover:text-sky-500 dark:hover:text-sky-400" href="./index.html#projects" previewlistener="true">Projects</a>
+              <a class="w-full py-6 text-center hover:text-sky-500 dark:hover:text-sky-400" href="./index.html#experience" previewlistener="true">Experience</a>
+              <a class="w-full py-6 text-center hover:text-sky-500 dark:hover:text-sky-400" href="./index.html#contact" previewlistener="true">Contact Me</a>
+            </nav>
+          </section>
         </div>
       </div>
-    </nav>
+    </section>
     <main
       class="grid gap-4 p-4 mx-auto sm:p-6 sm:gap-6 lg:gap-8 lg:p-8 max-w-7xl md:grid-cols-8 lg:grid-cols-12"
     >
-    <header class="md:col-span-8 lg:col-span-12">
+    <header id="about" class="md:col-span-8 lg:col-span-12">
       <figure class="rounded-xl bg-slate-100 p-8 md:flex md:p-0 dark:bg-slate-800">
         <img
               src="./img/pic.png"
@@ -122,7 +76,7 @@
       </figure>
     </header>
       <!-- projects -->
-      <h1
+      <h1 id="projects"
         class="p-6 lg:col-span-12 md:col-span-8 text-4xl text-center font-medium"
       >
         Projects
@@ -333,7 +287,7 @@
             >
               Todo List
             </h3>
-            <p class="text-base font-normal sm:mt-1 sm:text-lg text-white/80">
+            <p class="text-base font-normal sm:mt-1 sm:text-sm text-white/80">
               JavaScript Project
             </p>
             <div class="relative mt-6 sm:mt-8">
@@ -389,7 +343,7 @@
             >
               Pig Game
             </h3>
-            <p class="text-base font-normal sm:mt-1 sm:text-lg text-white/80">
+            <p class="text-base font-normal sm:mt-1 sm:text-sm text-white/80">
               JavaScript Project
             </p>
             <div class="relative mt-6 sm:mt-8">
@@ -414,7 +368,7 @@
         </a>
       </section>
       <!-- experience -->
-      <h1 class="p-6 text-center text-4xl font-medium md:col-span-8 lg:col-span-12">Experience</h1>
+      <h1 id="experience" class="p-6 text-center text-4xl font-medium md:col-span-8 lg:col-span-12">Experience</h1>
 
       <section class="lg:col-start-4 md:col-start-2 lg:col-span-6 md:col-span-4 flex place-items-center mx-auto">
         <div class="timeline">
@@ -459,12 +413,19 @@
               <p class="text-gray-300">
                 Advisor on developing a school management system for my previous school.
               </p>
+              <p class="text-gray-300">
+                For More 👉 
+                <span>
+                  <a href="https://drive.google.com/file/d/1mPkrRaSY3avtdDXnVCSJB8JnkYz0maLp/view?usp=sharing" class="transition duration-300 text-cyan-300 hover:text-cyan-800" target="_blank" rel="noopener">Resume↗</a>
+                </span>
+              </p>
+
             </div>
           </div>
         </div>
       </section>
       <!-- Contact me -->
-      <h1 class="p-6 text-center text-4xl font-medium md:col-span-8 lg:col-span-12">Let's talk</h1>
+      <h1 id="contact" class="p-6 text-center text-4xl font-medium md:col-span-8 lg:col-span-12">Let's talk</h1>
   <section id="lets-talk" class="flex flex-wrap lg:col-span-12 md:col-span-8 justify-center mx-auto">
     <div class="item-center md:w-2/3 lg:w-1/2">
       <div class="-m-2 flex flex-wrap">
@@ -497,7 +458,7 @@
   <section class="w-full overflow-fix relative overflow-hidden bg-gray-800 p-4 sm:p-4 lg:p-2">
     <div class="container mx-auto sm:flex flex-wrap sm:justify-around sm:items-center px-5">
       <div class="md:w-1/3 lg:w-1/3 flex justify-center text-center sm:justify-start">
-        <p>address:<br> +25198989898989</p>
+        <p>address:<br>Addis Ababa, Ethiopia </p>
       </div>
       <div class="flex space-y-2 sm:space-x-2 sm:space-y-0 md:w-1/3 lg:w-1/3 justify-around sm:justify-center items-center p-2">
         <a aria-label="Email" href="mailto:halleluya.mulugeta@gmail.com" target="_blank" rel="noopener" class="block h-12 w-12 cursor-pointer overflow-hidden rounded-full bg-white/10 transition group-hover:bg-white/[.15] sm:w-12" previewlistener="true">
@@ -529,5 +490,6 @@
     <p class="flex justify-center text-center pt-2">© copyright 2024</p>
   </section>
 </footer>
+<script src="./js/script.js"></script>
   </body>
 </html>
