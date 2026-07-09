@@ -1,7 +1,7 @@
 "use client";
 
 import { TypewriterProps } from "@/types/ComponentProps";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 const Typewriter: React.FC<TypewriterProps> = ({
   sentences,
@@ -10,12 +10,16 @@ const Typewriter: React.FC<TypewriterProps> = ({
   pauseTime = 1500,
   className = "",
 }) => {
+  const safeSentences = useMemo(
+    () => (sentences.length > 0 ? sentences : [""]),
+    [sentences],
+  );
   const [text, setText] = useState("");
   const [sentenceIndex, setSentenceIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    const currentSentence = sentences[sentenceIndex];
+    const currentSentence = safeSentences[sentenceIndex];
 
     let timeoutId: NodeJS.Timeout;
 
@@ -26,7 +30,7 @@ const Typewriter: React.FC<TypewriterProps> = ({
         }, deletingSpeed);
       } else {
         setIsDeleting(false);
-        setSentenceIndex((prev) => (prev + 1) % sentences.length);
+        setSentenceIndex((prev) => (prev + 1) % safeSentences.length);
       }
     } else {
       if (text.length < currentSentence.length) {
@@ -44,7 +48,7 @@ const Typewriter: React.FC<TypewriterProps> = ({
   }, [
     text,
     isDeleting,
-    sentences,
+    safeSentences,
     sentenceIndex,
     typingSpeed,
     deletingSpeed,

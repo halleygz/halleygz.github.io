@@ -8,20 +8,18 @@ import { useTheme } from "next-themes";
 const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   description,
-  imageUrl,
   technologies,
   link,
 }) => {
   const { theme } = useTheme();
+  const [githubUrl, liveUrl] = Array.isArray(link) ? link.filter(Boolean) : [];
+
   return (
     <div
       className={`flex flex-col gap-4 justify-between border  ${
         theme === "light" ? "border-gray-800" : "border-gray-400"
       } overflow-hidden hover:translate-x-1 hover:-translate-y-1 transition-all font-mono`}
     >
-      <div className="hidden">
-        <img src={imageUrl} alt={title} className="w-full h-54 object-cover" />
-      </div>
       <h3 className="font-semibold text-lg p-4">{title}</h3>{" "}
       <div className="p-4">
         <p className="">{description}</p>
@@ -30,20 +28,24 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <Button key={key}>{tech}</Button>
           ))}
         </div>
-        <div className="flex gap-2">
-          <Link href={link[0]} target="blank">
-            <Button className="flex justify-center align-middle cursor-pointer">
-              <FaGithub size={20} style={{ verticalAlign: "middle" }} />
-            </Button>
-          </Link>
-          {link[1] && (
-            <Link href={`${link[1]}`} target="blank">
+        {(githubUrl || liveUrl) && (
+          <div className="flex gap-2">
+            {githubUrl && (
+              <Link href={githubUrl} target="_blank" rel="noreferrer">
+                <Button className="flex justify-center align-middle cursor-pointer">
+                  <FaGithub size={20} style={{ verticalAlign: "middle" }} />
+                </Button>
+              </Link>
+            )}
+            {liveUrl && (
+              <Link href={liveUrl} target="_blank" rel="noreferrer">
               <Button className="flex justify-center align-middle cursor-pointer">
                 <FaGlobe size={20} style={{ verticalAlign: "middle" }} />
               </Button>
             </Link>
-          )}
-        </div>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );
