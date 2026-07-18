@@ -1,18 +1,23 @@
 import TypeWriter from "@/components/Animation/Typewriter";
+import { getProfileContent } from "@/lib/content";
 
-export default function Home() {
+export const revalidate = 300;
+
+export default async function Home() {
+  const profile = await getProfileContent();
+
   return (
     <div>
       <header className="mb-10 sm:mb-12 lg:16">
         {/* <Heading content="Hey" /> */}
         <TypeWriter
-          sentences={["Hey,", "Halle here"]}
+          sentences={profile.heroSentences}
           className="font-mono text-4xl lg:text-8xl font-thin"
         />
       </header>
 
       <p className="font-mono font-extralight text-xl sm:w-full lg:w-1/2">
-        Or Halleluya Ephrem Mulugeta, more formally. Got into the world of prgramming accidently, in the name of fixing my crashed laptop. After fixing it and a bunch of loop holes later, I got my self in the world of building web apps. I&apos;m now concentrating on building backend tools. Also love making front end heavy applications.
+        {profile.intro}
       </p>
     </div>
   );

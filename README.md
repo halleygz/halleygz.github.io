@@ -5,13 +5,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -19,6 +13,28 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Project Layout
+
+- `.`: public portfolio site. It only reads published content from PostgreSQL.
+- `drizzle/`: database migrations for the public portfolio content tables.
+
+## Public Site Setup
+
+Create a `.env.local` file in the repo root with a read-only PostgreSQL role:
+
+```bash
+DATABASE_URL=postgresql://readonly_user:password@host.neon.tech/dbname?sslmode=verify-full
+```
+
+Then run the public site:
+
+```bash
+pnpm install
+pnpm dev
+```
+
+The public site renders published portfolio content through cached server-side Drizzle reads. Use a read-only database role for `DATABASE_URL`; the app only exposes Drizzle's `select` API internally.
 
 ## Learn More
 
